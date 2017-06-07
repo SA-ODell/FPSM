@@ -9,22 +9,35 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import KeychainSwift
 
 class SignInViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let keyChain = DataService().keyChain
+        if keyChain.get("uid") != nil {
+            self.performSegue(withIdentifier: "SignedIn", sender: nil)
+        }
+    }
+    
+    func CompletedSignIn (id: String) {
+        let keyChain = DataService().keyChain
+        keyChain.set(id, forKey: "uid")
+    }
     
     @IBAction func signinTapped(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
                 if error == nil {
+                    self.CompletedSignIn(id: user!.uid)
                     self.performSegue(withIdentifier: "SignedIn", sender: nil)
                     
                 }  else {
@@ -32,6 +45,7 @@ class SignInViewController: UIViewController {
                         if error != nil {
                             print("Cant sign in user")
                         } else {
+                            self.CompletedSignIn(id: user!.uid)
                             self.performSegue(withIdentifier: "SignedIn", sender: nil)
                         }
                     }
