@@ -25,14 +25,14 @@ class SignInViewController: UIViewController {
         if let email = emailTextField.text, let password = passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
                 if error == nil {
-                    // perform seque
+                    self.performSegue(withIdentifier: "SignedIn", sender: nil)
                     
                 }  else {
                     Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                         if error != nil {
                             print("Cant sign in user")
                         } else {
-                            // perform seque
+                            self.performSegue(withIdentifier: "SignedIn", sender: nil)
                         }
                     }
                 }
