@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2BE1433F1EE746F1009AF346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE1433E1EE746F1009AF346 /* AppDelegate.swift */; };
-		2BE143411EE746F1009AF346 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE143401EE746F1009AF346 /* ViewController.swift */; };
+		2BE143411EE746F1009AF346 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE143401EE746F1009AF346 /* SignInViewController.swift */; };
 		2BE143441EE746F1009AF346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE143421EE746F1009AF346 /* Main.storyboard */; };
 		2BE143471EE746F1009AF346 /* FPSM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BE143451EE746F1009AF346 /* FPSM.xcdatamodeld */; };
 		2BE143491EE746F1009AF346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE143481EE746F1009AF346 /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		2BE1433B1EE746F1009AF346 /* FPSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE1433E1EE746F1009AF346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BE143401EE746F1009AF346 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BE143401EE746F1009AF346 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2BE143431EE746F1009AF346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BE143461EE746F1009AF346 /* FPSM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FPSM.xcdatamodel; sourceTree = "<group>"; };
 		2BE143481EE746F1009AF346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				2BE1433E1EE746F1009AF346 /* AppDelegate.swift */,
-				2BE143401EE746F1009AF346 /* ViewController.swift */,
+				2BE143401EE746F1009AF346 /* SignInViewController.swift */,
 				2BE143421EE746F1009AF346 /* Main.storyboard */,
 				2BE143481EE746F1009AF346 /* Assets.xcassets */,
 				2BE1434A1EE746F1009AF346 /* LaunchScreen.storyboard */,
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE143471EE746F1009AF346 /* FPSM.xcdatamodeld in Sources */,
-				2BE143411EE746F1009AF346 /* ViewController.swift in Sources */,
+				2BE143411EE746F1009AF346 /* SignInViewController.swift in Sources */,
 				2BE1433F1EE746F1009AF346 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +387,7 @@
 				2BE143521EE746F1009AF346 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
