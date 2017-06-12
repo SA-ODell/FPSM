@@ -11,7 +11,7 @@ import Firebase
 import KeychainSwift
 
 
-class PageOneController: UIViewController {
+class PageOneController: UIViewController, UITextFieldDelegate {
     
     //Mark: Properties
     @IBOutlet weak var nameTextField: UITextField!
@@ -23,7 +23,8 @@ class PageOneController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Handle the text field’s user input through delegate callbacks.
+       nameTextField.delegate = self
     }
     
     @IBAction func SignOut (_ sender: Any) {
@@ -37,6 +38,19 @@ class PageOneController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    //MARK: UITextFieldDelegate
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide the keyboard
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        childNameLabel.text = textField.text
+
+    }
+    
     //Mark: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         childNameLabel.text = "Default Text"
@@ -44,4 +58,3 @@ class PageOneController: UIViewController {
 
 }
 
-// testing git status
