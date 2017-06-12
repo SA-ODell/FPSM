@@ -11,22 +11,35 @@ import Firebase
 import KeychainSwift
 
 
-class PageOneController: UIViewController, UITextFieldDelegate {
+class PageOneController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     //Mark: Properties
-    @IBOutlet weak var nameTextField: UITextField!
-    
-    @IBOutlet weak var childNameLabel: UILabel!
-    
+
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Handle the text field’s user input through delegate callbacks.
-       nameTextField.delegate = self
+
     }
     
+    //MARK: UITextFieldDelegate
+    
+
+    
+
+    
+    //MARK: UIImagePickerControllerDelegate
+    
+    
+    
+    //Mark: Actions
+
+    
+
+
+    // Sign out actions
     @IBAction func SignOut (_ sender: Any) {
         let firebaseAuth = Auth.auth()
         do {
@@ -36,24 +49,6 @@ class PageOneController: UIViewController, UITextFieldDelegate {
         }
         DataService().keyChain.delete("uid")
         dismiss(animated: true, completion: nil)
-    }
-
-    //MARK: UITextFieldDelegate
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //Hide the keyboard
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-        childNameLabel.text = textField.text
-
-    }
-    
-    //Mark: Actions
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        childNameLabel.text = "Default Text"
     }
 
 }

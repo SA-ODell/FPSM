@@ -36,5 +36,7 @@
 	<string>1:966184650790:ios:ad23b01349ef6976</string>
 	<key>DATABASE_URL</key>
 	<string>https://fpsm-fc92f.firebaseio.com</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow photos to be added to child profiles</string>
 </dict>
 </plist>
