@@ -15,6 +15,7 @@
 		2BE1434C1EE746F1009AF346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE1434A1EE746F1009AF346 /* LaunchScreen.storyboard */; };
 		2BE143541EE7499D009AF346 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE143531EE7499D009AF346 /* GoogleService-Info.plist */; };
 		2BE41FE61EE88E1C0057746B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE41FE51EE88E1C0057746B /* DataService.swift */; };
+		2BE41FE81EE8C53C0057746B /* PageOneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE41FE71EE8C53C0057746B /* PageOneController.swift */; };
 		8BC8A3A223698E59A1D4EE59 /* Pods_FPSM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8B97E9A505F519F5E2C658 /* Pods_FPSM.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		2BE1434D1EE746F1009AF346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BE143531EE7499D009AF346 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BE41FE51EE88E1C0057746B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		2BE41FE71EE8C53C0057746B /* PageOneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageOneController.swift; sourceTree = "<group>"; };
 		389FF3BB13B1C7FDD660FB20 /* Pods-FPSM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPSM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FPSM/Pods-FPSM.debug.xcconfig"; sourceTree = "<group>"; };
 		7D8B97E9A505F519F5E2C658 /* Pods_FPSM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FPSM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF1A5ECD2DFF664D59C5018 /* Pods-FPSM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FPSM.release.xcconfig"; path = "Pods/Target Support Files/Pods-FPSM/Pods-FPSM.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				2BE143531EE7499D009AF346 /* GoogleService-Info.plist */,
 				2BE143451EE746F1009AF346 /* FPSM.xcdatamodeld */,
 				2BE41FE51EE88E1C0057746B /* DataService.swift */,
+				2BE41FE71EE8C53C0057746B /* PageOneController.swift */,
 			);
 			path = FPSM;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE143471EE746F1009AF346 /* FPSM.xcdatamodeld in Sources */,
+				2BE41FE81EE8C53C0057746B /* PageOneController.swift in Sources */,
 				2BE143411EE746F1009AF346 /* SignInViewController.swift in Sources */,
 				2BE1433F1EE746F1009AF346 /* AppDelegate.swift in Sources */,
 				2BE41FE61EE88E1C0057746B /* DataService.swift in Sources */,

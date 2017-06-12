@@ -13,7 +13,9 @@ import KeychainSwift
 
 class SignInViewController: UIViewController {
 
+    // MARK: email text field properties
     @IBOutlet weak var emailTextField: UITextField!
+    // MARK: password text field properties
     @IBOutlet weak var passwordTextField: UITextField!
     
     
