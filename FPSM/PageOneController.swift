@@ -12,6 +12,13 @@ import KeychainSwift
 
 
 class PageOneController: UIViewController {
+    
+    //Mark: Properties
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var childNameLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +37,9 @@ class PageOneController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
-
+    //Mark: Actions
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+        childNameLabel.text = "Default Text"
+    }
 
 }
