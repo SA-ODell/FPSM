@@ -1,0 +1,6 @@
+framework module Pods_FPSM {
+  umbrella header "Pods-FPSM-umbrella.h"
+
+  export *
+  module * { export * }
+}
