@@ -62,6 +62,8 @@ class PageOneController: UIViewController, UITextFieldDelegate, UIImagePickerCon
     //Mark: Actions
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         
+        print("tap gesture recognized")
+        
         //Hide the keyboard
         nameTextField.resignFirstResponder()
         
@@ -70,6 +72,8 @@ class PageOneController: UIViewController, UITextFieldDelegate, UIImagePickerCon
         
         // Only allow photos to be picked, not taken.
         imagePickerController.sourceType = .photoLibrary
+        
+        print("Opening photo library")
         
         //ViewController is notified that user picks an image
         imagePickerController.delegate = self
