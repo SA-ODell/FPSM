@@ -71,6 +71,7 @@
 			children = (
 				2BE1433E1EE746F1009AF346 /* AppDelegate.swift */,
 				2BE143401EE746F1009AF346 /* SignInViewController.swift */,
+				2BE41FE71EE8C53C0057746B /* PageOneController.swift */,
 				2BE143421EE746F1009AF346 /* Main.storyboard */,
 				2BE143481EE746F1009AF346 /* Assets.xcassets */,
 				2BE1434A1EE746F1009AF346 /* LaunchScreen.storyboard */,
@@ -78,7 +79,6 @@
 				2BE143531EE7499D009AF346 /* GoogleService-Info.plist */,
 				2BE143451EE746F1009AF346 /* FPSM.xcdatamodeld */,
 				2BE41FE51EE88E1C0057746B /* DataService.swift */,
-				2BE41FE71EE8C53C0057746B /* PageOneController.swift */,
 			);
 			path = FPSM;
 			sourceTree = "<group>";
