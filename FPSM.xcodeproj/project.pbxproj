@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BAEC56D1EF049780090A01F /* Kiddo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEC56C1EF049780090A01F /* Kiddo.swift */; };
+		2BAEC56D1EF049780090A01F /* KiddoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEC56C1EF049780090A01F /* KiddoClass.swift */; };
+		2BAEC56F1EF069400090A01F /* KidsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEC56E1EF069400090A01F /* KidsTableViewCell.swift */; };
+		2BAEC5731EF084440090A01F /* PageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEC5721EF084440090A01F /* PageTwoViewController.swift */; };
 		2BE1433F1EE746F1009AF346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE1433E1EE746F1009AF346 /* AppDelegate.swift */; };
 		2BE143411EE746F1009AF346 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE143401EE746F1009AF346 /* SignInViewController.swift */; };
 		2BE143441EE746F1009AF346 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE143421EE746F1009AF346 /* Main.storyboard */; };
@@ -21,7 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BAEC56C1EF049780090A01F /* Kiddo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kiddo.swift; sourceTree = "<group>"; };
+		2BAEC56C1EF049780090A01F /* KiddoClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KiddoClass.swift; sourceTree = "<group>"; };
+		2BAEC56E1EF069400090A01F /* KidsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KidsTableViewCell.swift; sourceTree = "<group>"; };
+		2BAEC5721EF084440090A01F /* PageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTwoViewController.swift; sourceTree = "<group>"; };
 		2BE1433B1EE746F1009AF346 /* FPSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE1433E1EE746F1009AF346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE143401EE746F1009AF346 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BAEC5741EF182F70090A01F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BE41FE71EE8C53C0057746B /* PageOneController.swift */,
+				2BE143401EE746F1009AF346 /* SignInViewController.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		2BE143321EE746F1009AF346 = {
 			isa = PBXGroup;
 			children = (
@@ -71,10 +84,11 @@
 		2BE1433D1EE746F1009AF346 /* FPSM */ = {
 			isa = PBXGroup;
 			children = (
+				2BAEC5741EF182F70090A01F /* Models */,
 				2BE1433E1EE746F1009AF346 /* AppDelegate.swift */,
-				2BE143401EE746F1009AF346 /* SignInViewController.swift */,
-				2BE41FE71EE8C53C0057746B /* PageOneController.swift */,
-				2BAEC56C1EF049780090A01F /* Kiddo.swift */,
+				2BAEC56C1EF049780090A01F /* KiddoClass.swift */,
+				2BAEC56E1EF069400090A01F /* KidsTableViewCell.swift */,
+				2BAEC5721EF084440090A01F /* PageTwoViewController.swift */,
 				2BE143421EE746F1009AF346 /* Main.storyboard */,
 				2BE143481EE746F1009AF346 /* Assets.xcassets */,
 				2BE1434A1EE746F1009AF346 /* LaunchScreen.storyboard */,
@@ -234,9 +248,11 @@
 				2BE143471EE746F1009AF346 /* FPSM.xcdatamodeld in Sources */,
 				2BE41FE81EE8C53C0057746B /* PageOneController.swift in Sources */,
 				2BE143411EE746F1009AF346 /* SignInViewController.swift in Sources */,
+				2BAEC56F1EF069400090A01F /* KidsTableViewCell.swift in Sources */,
+				2BAEC5731EF084440090A01F /* PageTwoViewController.swift in Sources */,
 				2BE1433F1EE746F1009AF346 /* AppDelegate.swift in Sources */,
 				2BE41FE61EE88E1C0057746B /* DataService.swift in Sources */,
-				2BAEC56D1EF049780090A01F /* Kiddo.swift in Sources */,
+				2BAEC56D1EF049780090A01F /* KiddoClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

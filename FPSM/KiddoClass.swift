@@ -1,5 +1,5 @@
 //
-//  Kiddo.swift
+//  KiddoClass.swift
 //  
 //
 //  Created by Steve @work on 6/13/17.
